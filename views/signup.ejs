@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inscription</title>
+</head>
+<body>
+  <h1>Inscription</h1>
+  <form action="/signup" method="POST">
+    <label>Nom d'utilisateur :</label><br>
+    <input type="text" name="username" required><br><br>
+
+    <label>Mot de passe :</label><br>
+    <input type="password" name="password" required><br><br>
+
+    <label>Rôle :</label><br>
+    <select name="role" required>
+      <option value="etudiant">Étudiant</option>
+      <option value="intervenant">Intervenant</option>
+      <option value="admin">Admin</option>
+    </select><br><br>
+
+    <button type="submit">S'inscrire</button>
+  </form>
+</body>
+</html>
